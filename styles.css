@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fdfcfc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu ul {
+    font-family: 'Acme';
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #0c0c0c;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #b98684c5;
+    transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::before {
+    width: 100%;
+}
+
+.social-icons {
+    margin-right: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Adicionando margem direita para os ícones */
+.social-icons a:last-child {
+    margin-right: 20px;
+}
+
+/* Mudar o ícone quando passa o mouse */
+.social-icons a.instagram img:hover {
+    content: url('instagram-icon-hover.png');
+}
+
+.social-icons a.share img:hover {
+    content: url('share-icon-hover.png');
+}
+
+.content {
+    margin-top: 80px; /* Espaço para a top-bar */
+    padding: 5px;
+}
+
+.main-text {
+    padding: 2px;
+    color: #c59a95;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 20px;
+    font-style: normal;
+    
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 23%;
+}
+
+.images2 img {
+    width: 23%;
+}
+
+
+
+.image-text {
+    padding: 5em;
+    background-color: #e7dfdd;
+    font-family: "Merienda", cursive;
+    color: #111110;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.image-text2 {
+    padding: 5em;
+    background-color: #ffffff;
+    font-family: "Merienda", cursive;
+    color: #111110;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.image-text2 div {
+    width: 48%;
+    text-align: center;
+}
+
+.image-text div {
+    width: 48%;
+    text-align: center;
+}
+
+.image-text img {
+    padding-right: 5em;
+    padding-left: 5em;
+    max-width: 100%;
+}
+
+.image-text2 img {
+    padding-right: 5em;
+    padding-left: 5em;
+    max-width: 100%;
+}
+
+.image-text p {
+    margin-top: 10px;
+}
+.image-text2 p {
+    margin-top: 10px;
+}
+
+.image-text h2 {
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+.image-text2 h2 {
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+/* Regras de Mídia para Responsividade */
+
+@media screen and (max-width: 768px) {
+    .menu ul li {
+        margin-right: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        margin-left: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .images img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .image-text div {
+        width: 100%;
+    }
+    
+    .image-text2 div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu ul li a {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        margin-left: 5px;
+    }
+
+    .images img {
+        width: 100%;
+    }
+}
